@@ -45,6 +45,9 @@ public class Model {
 		this.statusTextProperty().set(statusText);
 	}
 
-	
+	public List<Pos> trovaParola(String parola) {
+		Ricorsione ricorsione = new Ricorsione();
+		return ricorsione.trovaParola(parola, this.board);
+	}
 
 }

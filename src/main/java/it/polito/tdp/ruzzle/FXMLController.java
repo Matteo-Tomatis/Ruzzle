@@ -2,6 +2,7 @@ package it.polito.tdp.ruzzle;
 
 import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
@@ -104,6 +105,11 @@ public class FXMLController {
     	}
     	
     	//TODO
+    	List<Pos> posizioni = this.model.trovaParola(parola);
+    	if(posizioni!=null) {
+    		for(Pos p : posizioni)
+    			this.letters.get(p).setDefaultButton(true);
+    	}
     }
 
     @FXML

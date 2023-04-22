@@ -68,7 +68,7 @@ public class Board {
 	 */
 	public void reset() {
 		for(Pos p: this.positions) {
-			
+
 			//TODO: migliorare l'assegnazione secondo la probabiltà di ogni lettetera di essere utilizzata nella lingua italiana
 			int random = (int)(Math.random()*26) ;
 			String letter = Character.toString((char)('A'+random)) ;
